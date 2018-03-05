@@ -1,0 +1,218 @@
+body {
+    font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
+    background-image: url(photo/0.png); /* путь к фоновому изображению */
+	margin: 0px 20px 0px 20px; /* поля  вокруг элемента */
+	}
+	h1 {
+	color: black
+	text-align: center;	
+	}
+	#header {
+	width:100%;
+    font-size: 3.2em; /* Размер текста */
+    text-align: center; /* Выравнивание по центру */
+	top: 200px;
+	padding: 3px; /* Отступы вокруг текста */
+    color: white; /* Цвет текста */
+	
+	
+	height: 332px;
+	
+	}
+	.photo {
+	
+	float: left;
+	
+	}
+	.photo1 {
+	
+	float: right;
+	}
+	.photo2 {
+	
+	float: center;
+	
+	}
+	
+	#content {
+	margin: 2px 20px 0px 283px;
+    padding: 10px; /* Поля вокруг текста */
+    background: black; /* Цвет фона правой колонки */
+	 border: 1px solid #333; /* Параметры рамки */
+	 border-radius: 10px;     /*Закруглённые углы*/
+	
+	}
+	#footer {
+	margin: 0px 20px 20px 20px;  
+	margin-top: 25%;
+    background: #333131; /* Цвет фона подвала */
+    color: #fff; /* Цвет текста */
+    padding: 5px; /* Отступы вокруг текста */
+    clear: left; /* Отменяем действие float */
+	border-top-left-radius: 32px;
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
+	border-bottom-left-radius: 32px;
+	}
+	
+	#sidebar{  
+	background: black;     /*Фон общего блока*/
+	padding: 5px;     /*Отступ от пунктов меню*/
+	border-radius: 10px;     /*Закруглённые углы*/
+	list-style: none; /* убираем маркеры */
+	width: 270px;
+	float: left; /*Размещаем горизонтально*/
+	margin: 0px 10px 200px 0px;
+	}
+    #sidebar  ul {
+    list-style-type: none; 
+    width: 180px;
+    margin: 0; 
+    padding: 0;
+	
+	}
+	#sidebar  li { /* присваиваем стили для LI элементов */
+	position: relative; 
+	font: bold 13px Arial;
+	padding: 2px; /*Отступ от пунктов меню*/
+	}
+	#sidebar  li:hover  {
+	position: relative; 
+	font: bold 13px Arial;
+	display: block; /* При выделении пункта курсором мыши отображается подменю */
+	}
+	#sidebar  li  a{ /*Задаём стили для ссылок*/
+	text-align: center;
+	color:#E0E9E0;
+	border: 1px solid #ccc;
+	height: 35px;
+	line-height: 35px; /* высота верхней линии над текстом */
+	padding: 0 10px 0 10px;
+	
+	text-decoration:none; /*Убираем подчеркивание*/
+	padding: 2px;     /*Отступ от пунктов меню*/
+	border-radius: 10px;     /*Закруглённые углы*/
+	box-shadow: 0px 0px 0px 2px #0ea8f4; /*Рамка общего блока*/
+	display: block;
+	
+	}	
+	#sidebar li a:hover { /* присваиваем стили для a элемента при наведении на нее мышки */
+	color:#411494;
+	background: url(photo/000.jpg);
+	}
+	#sidebar li:hover  > a { /* выделяем родительские пункты, при наведении на дочерние */
+	color:white;
+	background: url(photo/000.jpg);
+	}
+	#sidebar li ul { /* подменю*/
+    position: absolute;  /* Подменю позиционируются абсолютно */
+	left: 270px;  
+	margin-top: -39px;  /* Сдвигаем подменю вверх */
+	display: none;  /* Скрываем подменю */
+	}
+	#sidebar li:hover ul {
+	display: block; /* При выделении пункта курсором мыши отображается подменю */
+	}
+	#sidebar  li ul li{ /* списки подменю*/
+	text-align: center;
+	color:#E0E9E0;
+	height: 40px;
+	line-height: 35px; /* высота верхней линии над текстом */
+	background: url(photo/11.png);
+	text-decoration:none;
+	padding: 1px; 
+	border-radius: 20px;     /*Закруглённые углы*/
+	box-shadow: 0px 0px 0px 2px #0ea8f4; /*Рамка общего блока*/
+	display: block;
+	}
+	#sidebar li a:active{        /*При нажатии */
+	color: #171414;
+	box-shadow: 0px 0px 15px 5px #EB1616;
+	}
+	.text {
+	text-align: center;
+	font-family:  Arial;  
+	font-family: Arial;
+	font-size: 16px;
+	}
+	.text1 {
+	text-align: left;
+	}
+	.wrapper{
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	}
+	.myButton {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background-color: #007dc1;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	}
+	.myButton:hover {
+	background: #0061a7;
+	}
+	.myButton:active {
+	position: relative;
+	}
+	.myButton1 {
+	-moz-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #54a3f7;
+	background-color: #007dc1;
+	border-radius: 3px;
+	border: 1px solid #124d77;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 13px;
+	padding: 6px 24px;
+	text-decoration: none;
+	width: 200px;
+	}
+	.myButton1:hover {
+	background: #0061a7;
+	}
+	.myButton1:active {
+	position: relative;
+	}
+	#myButton2 {
+	text-align:center;
+	margin-top: 40px;
+	}
+	.variant {
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 2px;
+	color: #DE8538;
+	}
+	.pravila1 {
+	color: #26241F;
+	font-family: Arial;
+	font-size: 16px;
+	}
+	.hr {
+	width: 14%;
+	}
+	
+	
+	
+    
+	
+	
+	
+  
+  
+   
